@@ -19,6 +19,8 @@ class Server {
 
     routes(){
         this.app.use('/api', require('../routes/usuario.routing'));
+        this.app.use('/api', require('../routes/habilidades.routing'));
+        this.app.use('/api', require('../routes/proyectos.routing'))
     }
 
     listen() {
